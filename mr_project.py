@@ -35,7 +35,7 @@ st.sidebar.title("About Project")
 st.sidebar.text("This project recommmend movie based on story write director of watched movie")
 
 st.sidebar.title("Contact us")
-st.sidebar.text("+919958966311")
+st.sidebar.text("+919717776422")
 
 watched_movie=st.selectbox("Select Watched Movie",options=df['name'])
 if st.button("Predict",key="b1"):
@@ -44,7 +44,7 @@ if st.button("Predict",key="b1"):
     for i in indexes[0][1:]:
         st.text(df.loc[i].values[1])
         mid=df.loc[i].values[0]
-        resp=requests.get(f"http://www.omdbapi.com/?i={mid}&apikey=b84e8a7c")
+        resp=requests.get(f"http://www.omdbapi.com/?i=tt3896198&apikey=7472611b")
         data=resp.json()
         st.image(data['Poster'],width=300)   
 
