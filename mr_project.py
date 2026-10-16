@@ -44,7 +44,7 @@ if st.button("Predict",key="b1"):
     for i in indexes[0][1:]:
         st.text(df.loc[i].values[1])
         mid=df.loc[i].values[0]
-        resp=requests.get(f"http://www.omdbapi.com/?i=tt3896198&apikey=7472611b")
+        resp=requests.get(f"http://www.omdbapi.com/?i={mid}&apikey=7472611b")
         data=resp.json()
         st.image(data['Poster'],width=300)   
 
