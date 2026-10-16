@@ -1,5 +1,4 @@
 joblib
-scikit-lean
 scikit-learn
 streamlit
 pillow
